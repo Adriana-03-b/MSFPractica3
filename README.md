@@ -1,10 +1,10 @@
-\[!\[Open in MATLAB Online]
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=Adriana-03-b/MSFPractica3)
 
-# Práctica: Sistema cardiovascular
+# Práctica: Sistema Musculoesqueletico
 
 ## Información de la estudiante
 
-Corina Plata-Ante \[03210981]; corina.plata@tectijuana.edu.mx
+Bañuelos Adriana \[23210694]; L23210694@tectijuana.edu.mx
 
 Modelado de Sistemas Fisiológicos
 
@@ -32,14 +32,17 @@ La asignatura de Modelado de Sistemas Fisiológicos forma parte del plan de estu
 6. Obtener la respuesta en lazo abierto y en lazo cerrado con el controlador PID en Spyder/Python con la función de transferencia.
 
 ## Descripción detallada del sistema
+Michael Khoo modeliza un compartimento del sistema musculoesquelético mediante el diagrama mecánico.
+El modelo musculoesquelético presentado corresponde a un sistema mecánico equivalente que incluye elementos activos y pasivos para describir el comportamiento del músculo. Debido a la presencia de un elemento elástico en paralelo y una combinación en serie de elementos viscoelásticos, el sistema requiere al menos dos variables de estado para representar su dinámica. El vector de estados puede definirse mediante las variables x(t), que representa el desplazamiento total del sistema, y x1(t) que corresponde a la elongación del elemento elástico en serie.
+En este modelo, F(t) representa la fuerza total aplicada al sistema, mientras que F0 es la fuerza generada por el elemento contráctil activo del músculo, cumpliendo la relación 0<α<1. Los parámetros del sistema incluyen R, que modela la amortiguación viscosa del tejido muscular Cp; , que representa la elasticidad en paralelo asociada al sarcolema; y Cs , que corresponde a la elasticidad en serie vinculada a los tendones.
+La configuración en paralelo implica que el desplazamiento total x(t) es compartido entre las ramas del sistema, mientras que en la rama en serie, la suma de las deformaciones del amortiguador 𝑅 y el resorte Cs ​es igual a x(t). Sin embargo, cada elemento puede deformarse de manera diferente, por lo que se introduce x1(t)como la deformación del resorte en serie, resultando que la deformación del amortiguador es x(t)-x1(t).
 
-El modelo de Windkessel de cuatro elementos contiene dos elementos dinámicos. Por lo tanto, se necesitan dos estados para describir la dinámica. El vector de estados se conforma por las variables FL(t) denotando el flujo a través de la inercia arterial total, y la variable Pp(t) representando la presión sobre la distensibilidad arterial. Entonces, asumiendo Pa(t) como la presión arterial de entrada, y en consecuencia a Fa(t) como el flujo hacia la aorta o arteria pulmonar. Los parámetros son Z, C, R y L, que representan respectivamente la impedancia característica del lecho vascular pulmonar (aorta y arteria pulmonar), la distensibilidad aérea total, la resistencia periférica y la inertancia arterial. Este modelo tiene muchas ventajas importantes, por ejemplo:
+Este modelo presenta varias ventajas importantes, por ejemplo:
 
-1\. Su sencillez, unos pocos elementos interconectados son suficientes para reproducir la dinámica principal del sistema cardiovascular.
-
-2\. Existe una clara analogía entre los elementos eléctricos y los componentes hidráulicos implicados en el efecto Windkessel. En consecuencia, se relacionan fácilmente con el significado hemodinámico y el acoplamiento ventrículo-arterial.
-
-Palabras clave: ???; ???; ???; ???; ???
+1.Permite representar de manera sencilla la interacción entre los componentes activos y pasivos del músculo mediante pocos elementos mecánicos.
+2.Existe una analogía directa entre los elementos mecánicos (resortes y amortiguadores) y las propiedades fisiológicas del tejido muscular, facilitando la interpretación biomecánica del sistema.
+3.Es útil para analizar la respuesta dinámica del músculo ante diferentes estímulos de fuerza, considerando tanto efectos elásticos como viscosos.
+Palabras clave: Sistema musculoesquéletico; Análisis matemático; ; Modelo de Michel Khoo; Función de transferencia; Superposición.
 
 ## Lista de archivos incluidos en el repositorio
 
