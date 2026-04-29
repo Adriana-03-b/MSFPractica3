@@ -2,8 +2,10 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: MSFPractica 3
-message: Practica 3 sistema musculoesquéletico
+title: MSFPractica4
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
 type: software
 authors:
   - given-names: 'Adriana '
@@ -11,15 +13,14 @@ authors:
     email: L23210694@tijuana.tecnm.mx
 identifiers:
   - type: url
-    value: >-
-      https://matlab.mathworks.com/open/github/v1?repo=Adriana-03-b/MSFPractica3
-repository-code: 'https://github.com/Adriana-03-b/MSFPractica3'
+    value: 'https://github.com/Adriana-03-b/MSFPractica4/tree/main'
+repository-code: 'https://github.com/Adriana-03-b/MSFPractica4/tree/main'
 keywords:
-  - 'Sistema musculoesquéletico   '
-  - 'Modelo de Michael Khoo '
+  - Sistema Endocrino
   - Análisis matemático
-  - 'Función de transferencia   '
-  - Superposición
+  - Circuito eléctrico de segundo orden
+  - ' Modelado fisiológico '
+  - Dinámica hormonal.
 license: BSD-2-Clause
 version: '1.0'
-date-released: '2026-04-04'
+date-released: '2026-04-28'
